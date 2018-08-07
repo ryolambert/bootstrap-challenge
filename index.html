@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +11,12 @@
 		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
 				rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 				crossorigin="anonymous">
+
 		<!-- Link to personal stylized CSS -->
-		<link rel="stylesheet" href="">
+		<link rel="stylesheet" type="text/css" href="./style.css"/>
+
+		<!-- Google Fonts Link -->
+		<link href="https://fonts.googleapis.com/css?family=Anton|Oxygen" rel="stylesheet">
 
 		<!-- jQuery, Popper.js, then Bootstrap JS -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -19,13 +24,15 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
 				  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 				  crossorigin="anonymous"></script>
+		<script src="animate-gradient.js"></script>
 		<title>The Bootstrap 4 Challenge!</title>
 	</head>
-	<body>
+	<body id="gradient">
 		<header>
-			<div class="container">
-				<nav class="navbar navbar-expand-lg navbar-light bg-light">
-					<a class="navbar-brand" href="#">Title</a>
+			<div class="container nav-color">
+				<nav class=" navbar navbar-expand-lg navbar-dark">
+					<img class="navbar-brand img-fluid" src="./images/android-icon-36x36.png" alt="logo"/>
+					<a class="navbar-brand text-shadow" href="#">PopFx</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 							  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -53,20 +60,20 @@
 
 		<section class="py-5">
 			<div class="container">
-				<div class="jumbotron">
+				<div class="jumbotron box-shadow jumbo-gradient">
 					<h1 class="display-4">Hello, world!</h1>
 					<p class="lead">This is a simple hero unit, a simple jumbotron-style component for
 						calling extra attention to featured content or information.</p>
-					<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+					<a class="but but-primary" href="#" role="button">Learn more</a>
 				</div>
 			</div>
 		</section>
 
-		<section class="bg-secondary py-5">
+		<section class="info-gradient py-5">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-3">
-						<img class="img-fluid d-block mx-auto" src="https://morganfillman.space/g/300/300" alt="morgan freeman">
+						<img class="img-fluid d-block mx-auto box-shadow" src="https://morganfillman.space/g/300/300" alt="morgan freeman">
 					</div>
 					<div class="col-sm-9">
 						<p class="lead">Drake Equation a still more glorious dawn awaits star stuff harvesting star light laws of physics consciousness kindling the energy hidden in matter. Hydrogen atoms something incredible is waiting to be known something incredible is waiting to be known Apollonius of Perga Sea of Tranquility preserve and cherish that pale blue dot. Extraordinary claims require extraordinary evidence bits of moving fluff muse about a mote of dust suspended in a sunbeam brain is the seed of intelligence finite but unbounded and billions upon billions upon billions upon billions upon billions upon billions upon billions.</p>
@@ -79,9 +86,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-3 col-sm-6">
-						<img class="img-fluid rounded-circle d-block mx-auto mb-4" src="https://morganfillman.space/g/300/300"
+						<img class="img-fluid rounded-circle d-block mx-auto mb-4 box-shadow" src="https://morganfillman.space/g/300/300"
 							  alt="morgan freeman">
-						<div class="card mb-4">
+						<div class="card mb-4 box-shadow card-gradient">
 							<div class="card-body">
 								<h5 class="card-title">Title Blurb</h5>
 								<p class="card-text">They're not aliens, they're Earth…liens! The way I see it, every life is a pile of good things and bad things.…hey.…the good things don't always soften the bad things; but vice-versa the bad things don't necessarily spoil the good things and make them unimportant.</p>
@@ -89,9 +96,9 @@
 						</div>
 					</div>
 					<div class="col-lg-3 col-sm-6">
-						<img class="img-fluid rounded-circle d-block mx-auto mb-4" src="https://morganfillman.space/g/300/300"
+						<img class="img-fluid rounded-circle d-block mx-auto mb-4 box-shadow" src="https://morganfillman.space/g/300/300"
 							  alt="morgan freeman">
-						<div class="card mb-4">
+						<div class="card mb-4 box-shadow card-gradient">
 							<div class="card-body">
 								<h5 class="card-title">Title Blurb</h5>
 								<p class="card-text">They're not aliens, they're Earth…liens! The way I see it, every life is a pile of good things and bad things.…hey.…the good things don't always soften the bad things; but vice-versa the bad things don't necessarily spoil the good things and make them unimportant.</p>
@@ -99,9 +106,9 @@
 						</div>
 					</div>
 					<div class="col-lg-3 col-sm-6">
-						<img class="img-fluid rounded-circle d-block mx-auto mb-4" src="https://morganfillman.space/g/300/300"
+						<img class="img-fluid rounded-circle d-block mx-auto mb-4 box-shadow" src="https://morganfillman.space/g/300/300"
 							  alt="morgan freeman">
-						<div class="card mb-4">
+						<div class="card mb-4 box-shadow card-gradient">
 							<div class="card-body">
 								<h5 class="card-title">Title Blurb</h5>
 								<p class="card-text">They're not aliens, they're Earth…liens! The way I see it, every life is a pile of good things and bad things.…hey.…the good things don't always soften the bad things; but vice-versa the bad things don't necessarily spoil the good things and make them unimportant.</p>
@@ -109,9 +116,9 @@
 						</div>
 					</div>
 					<div class="col-lg-3 col-sm-6">
-						<img class="img-fluid rounded-circle d-block mx-auto mb-4" src="https://morganfillman.space/g/300/300"
+						<img class="img-fluid rounded-circle d-block mx-auto mb-4 box-shadow" src="https://morganfillman.space/g/300/300"
 							  alt="morgan freeman">
-						<div class="card mb-4">
+						<div class="card mb-4 box-shadow card-gradient">
 							<div class="card-body">
 								<h5 class="card-title">Title Blurb</h5>
 								<p class="card-text">They're not aliens, they're Earth…liens! The way I see it, every life is a pile of good things and bad things.…hey.…the good things don't always soften the bad things; but vice-versa the bad things don't necessarily spoil the good things and make them unimportant.</p>
@@ -122,7 +129,7 @@
 			</div>
 		</section>
 
-		<footer class="bg-dark text-light text-center py-4">
+		<footer class="info-gradient text-light text-center py-4">
 			<div class="container">
 				<small>I gravitate towards gravitas.</small>
 			</div>
